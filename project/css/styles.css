@@ -210,7 +210,7 @@ footer {
 
 /* MEDIA QUERIES
 --------------------*/
-@media (min-width: 720px) and (max-width: 1000px) {
+@media (min-width: 800px) and (max-width: 1000px) {
   body {
     color: red;
   }
@@ -219,9 +219,20 @@ footer {
 /* for tablets
 --------------------*/
 
-@media (min-width: 480px) and (max-width: 720px) {
+@media (min-width: 480px) and (max-width: 800px) {
   body {
     color: blue;
+  }
+
+  .profile-image {
+    width: 35%;
+    float: right;
+    margin: 0 0 15px 2%;
+  }
+
+  .profile .summary {
+    float: none;
+    width: auto;
   }
 }
 
@@ -229,7 +240,57 @@ footer {
 --------------------*/
 
 @media (max-width: 480px) {
-  body {
-    color: green;
+  .profile-image {
+    width: 75%;
+    float: none;
+    margin: 30px 30px 30px 30px;
+  }
+
+  .profile .summary {
+    float: none;
+    width: auto;
+  }
+
+  .work-experience .details {
+    text-align: left;
+    width: 100%;
+  }
+
+  .work-experience .description {
+    text-align: left;
+    width: 100%;
+  }
+
+  .company {
+    font-size: 14px;
+  }
+  
+  .content-wrap {
+    padding: 30px;
+  }
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
+  .work-experience h3 {
+    font-size: 1.5em;
+  }
+
+  .work-experience p {
+    font-size: 16px;
+  }
+
+  .contact .social {
+    width: 100%;
+    float: inherit;
+    text-align: center;
+    font-size: 30px;
+  }
+  .contact p {
+    text-align: center;
+  }
+  section h1 {
+    text-align: center;
   }
 }
