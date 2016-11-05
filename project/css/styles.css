@@ -12,7 +12,7 @@ http://ladieslearningcode.com
 }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   background: url(../images/desk-background.jpg) no-repeat fixed 50%;
   background-size: cover;
@@ -21,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0;
 }
@@ -30,8 +30,9 @@ header h2 {
   text-transform: uppercase;
 }
 header h1 {
-  font-family: "Pacifico", Georgia, cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 80px;
+  color: #AD974F;
 }
 header h2,
 section h1 {
@@ -53,10 +54,10 @@ section:nth-child(2n+2) {
 }
 
 a {
-  color: #FF3366;
+  color: #AD974F;
 }
 a:hover {
-  color: white;
+  color: #EAEAEA;
   text-decoration: none;
 }
 
@@ -68,7 +69,8 @@ ul li {
 }
 
 .content-wrap {
-  width: 1000px;
+  width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 90px 0; 
   overflow: auto;
@@ -86,23 +88,25 @@ header {
 /* ABOUT ME / PROFILE
 ----------------------*/
 .profile h1 {
-  background: #FF3366;
+  background: #AD974F;
   display: inline-block;
   padding: 10px 20px;
   transform: rotate(-4deg);
   margin-bottom: 10px;
   border: none;
+  color: #EAEAEA;
 }
 .profile .summary {
   float: left;
   width: 70%;
+  color: #EAEAEA;
 }
 .profile-image {
   float: left;
   width: 27%;
   margin-right: 3%;
   padding: 4px;
-  border: 1px solid #ddd;
+  border: 1px solid #EAEAEA;
   border-radius: 50%;
 }
 
@@ -151,21 +155,25 @@ header {
 }
 
 .company {
-  font-family: "Pacifico", Georgia, cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   letter-spacing: 0.1em;
-  color: #FF3366;
+  color: #AD974F;
 }
 
 /* EDUCATION
 -------------*/
 .education h2 {
   text-transform: uppercase;
+  color: #EAEAEA;
 }
 .education h3 {
-  color: #FF3366;
+  color: #AD974F;
 }
 
+.education p {
+  color: #EAEAEA;
+}
 
 /* CONTACT & FOOTER 
 --------------------*/
@@ -198,5 +206,9 @@ footer {
 
 /* MEDIA QUERIES
 --------------------*/
-
+@media ( max-width: 1000px) {
+  body {
+    color: red;
+  }
+}
 
