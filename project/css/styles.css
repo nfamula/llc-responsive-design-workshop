@@ -210,9 +210,26 @@ footer {
 
 /* MEDIA QUERIES
 --------------------*/
-@media ( max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1000px) {
   body {
     color: red;
   }
 }
 
+/* for tablets
+--------------------*/
+
+@media (min-width: 480px) and (max-width: 600px) {
+  body {
+    color: blue;
+  }
+}
+
+/* for smartphones
+--------------------*/
+
+@media (max-width: 480px) {
+  body {
+    color: green;
+  }
+}
